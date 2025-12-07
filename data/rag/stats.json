@@ -1,0 +1,29 @@
+{
+  "total_chunks": 90,
+  "chunks_per_drug": {
+    "Aspirin": 5,
+    "Ibuprofen": 5,
+    "Acetaminophen": 5,
+    "Amoxicillin": 5,
+    "Azithromycin": 5,
+    "Ciprofloxacin": 5,
+    "Metformin": 5,
+    "Atorvastatin": 5,
+    "Lisinopril": 5,
+    "Omeprazole": 5,
+    "Levothyroxine": 5,
+    "Albuterol": 5,
+    "Gabapentin": 5,
+    "Sertraline": 5,
+    "Losartan": 5,
+    "Vitamin D": 5,
+    "Vitamin B12": 5,
+    "Vitamin C": 5
+  },
+  "chunks_per_category": {
+    "indications": 18,
+    "dosage": 36,
+    "contraindications": 18,
+    "side_effects": 18
+  }
+}
