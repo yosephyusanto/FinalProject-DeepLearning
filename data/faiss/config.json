@@ -1,6 +1,6 @@
 {
   "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
   "embedding_dimension": 384,
-  "num_chunks": 90,
+  "num_chunks": 69,
   "index_type": "IndexFlatL2"
 }
