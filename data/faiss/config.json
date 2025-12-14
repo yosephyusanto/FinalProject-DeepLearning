@@ -1,6 +1,6 @@
 {
   "embedding_model": "sentence-transformers/all-mpnet-base-v2",
   "embedding_dimension": 768,
-  "num_chunks": 365,
+  "num_chunks": 504,
   "index_type": "IndexFlatL2"
 }

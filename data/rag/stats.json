@@ -1,28 +1,30 @@
 {
-  "total_chunks": 365,
+  "total_chunks": 504,
   "chunks_per_drug": {
-    "Aspirin": 5,
-    "Ibuprofen": 6,
+    "Aspirin": 2,
+    "Ibuprofen": 40,
     "Acetaminophen": 4,
-    "Amoxicillin": 35,
+    "Amoxicillin": 10,
     "Azithromycin": 8,
-    "Ciprofloxacin": 32,
+    "Ciprofloxacin": 37,
     "Metformin": 3,
     "Atorvastatin": 187,
-    "Lisinopril": 7,
+    "Lisinopril": 1,
+    "Omeprazole": 77,
     "Levothyroxine": 3,
-    "Albuterol": 49,
+    "Albuterol": 104,
     "Gabapentin": 9,
-    "Sertraline": 10,
-    "Losartan": 7
+    "Sertraline": 11,
+    "Losartan": 8
   },
   "chunks_per_category": {
-    "indications": 29,
-    "warnings": 71,
-    "dosage": 96,
-    "contraindications": 9,
-    "side_effects": 55,
-    "interactions": 53,
+    "indications": 18,
+    "dosage": 47,
+    "warnings": 133,
+    "contraindications": 13,
+    "side_effects": 60,
+    "overdosage": 65,
+    "interactions": 116,
     "mechanism": 52
   }
 }

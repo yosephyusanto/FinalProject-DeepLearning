@@ -1,0 +1,162 @@
+[
+  {
+    "query": "What is the recommended dosage of atorvastatin?",
+    "relevant": [{ "drug_name": "Atorvastatin", "category": "dosage" }]
+  },
+  {
+    "query": "How should amoxicillin be dosed for bacterial infections?",
+    "relevant": [{ "drug_name": "Amoxicillin", "category": "dosage" }]
+  },
+  {
+    "query": "What is the proper dosage of ibuprofen for adults?",
+    "relevant": [{ "drug_name": "Ibuprofen", "category": "dosage" }]
+  },
+  {
+    "query": "How often should acetaminophen be taken?",
+    "relevant": [{ "drug_name": "Acetaminophen", "category": "dosage" }]
+  },
+  {
+    "query": "What is the dosage information for albuterol inhalation?",
+    "relevant": [{ "drug_name": "Albuterol", "category": "dosage" }]
+  },
+  {
+    "query": "What dosage is recommended for ciprofloxacin?",
+    "relevant": [{ "drug_name": "Ciprofloxacin", "category": "dosage" }]
+  },
+  {
+    "query": "How should metformin dosage be adjusted?",
+    "relevant": [{ "drug_name": "Metformin", "category": "dosage" }]
+  },
+  {
+    "query": "What is the correct dosage of levothyroxine?",
+    "relevant": [{ "drug_name": "Levothyroxine", "category": "dosage" }]
+  },
+  {
+    "query": "What warnings should patients know before taking aspirin?",
+    "relevant": [{ "drug_name": "Aspirin", "category": "warnings" }]
+  },
+  {
+    "query": "Are there any important warnings associated with atorvastatin?",
+    "relevant": [{ "drug_name": "Atorvastatin", "category": "warnings" }]
+  },
+  {
+    "query": "What safety warnings are associated with ibuprofen use?",
+    "relevant": [{ "drug_name": "Ibuprofen", "category": "warnings" }]
+  },
+  {
+    "query": "What warnings apply to amoxicillin?",
+    "relevant": [{ "drug_name": "Amoxicillin", "category": "warnings" }]
+  },
+  {
+    "query": "Are there warnings for patients using albuterol?",
+    "relevant": [{ "drug_name": "Albuterol", "category": "warnings" }]
+  },
+  {
+    "query": "What warnings are listed for ciprofloxacin?",
+    "relevant": [{ "drug_name": "Ciprofloxacin", "category": "warnings" }]
+  },
+  {
+    "query": "What precautions or warnings exist for sertraline?",
+    "relevant": [{ "drug_name": "Sertraline", "category": "warnings" }]
+  },
+  {
+    "query": "What warnings should be considered when taking losartan?",
+    "relevant": [{ "drug_name": "Losartan", "category": "warnings" }]
+  },
+  {
+    "query": "What are the common side effects of atorvastatin?",
+    "relevant": [{ "drug_name": "Atorvastatin", "category": "side_effects" }]
+  },
+  {
+    "query": "What side effects can occur with amoxicillin?",
+    "relevant": [{ "drug_name": "Amoxicillin", "category": "side_effects" }]
+  },
+  {
+    "query": "What are the side effects of ibuprofen?",
+    "relevant": [{ "drug_name": "Ibuprofen", "category": "side_effects" }]
+  },
+  {
+    "query": "Does metformin cause gastrointestinal side effects?",
+    "relevant": [{ "drug_name": "Metformin", "category": "side_effects" }]
+  },
+  {
+    "query": "What side effects are associated with sertraline?",
+    "relevant": [{ "drug_name": "Sertraline", "category": "side_effects" }]
+  },
+  {
+    "query": "What adverse effects are linked to gabapentin?",
+    "relevant": [{ "drug_name": "Gabapentin", "category": "side_effects" }]
+  },
+  {
+    "query": "What side effects may occur when using albuterol?",
+    "relevant": [{ "drug_name": "Albuterol", "category": "side_effects" }]
+  },
+  {
+    "query": "Does atorvastatin interact with other medications?",
+    "relevant": [{ "drug_name": "Atorvastatin", "category": "interactions" }]
+  },
+  {
+    "query": "What drug interactions are associated with ciprofloxacin?",
+    "relevant": [{ "drug_name": "Ciprofloxacin", "category": "interactions" }]
+  },
+  {
+    "query": "Are there known drug interactions with amoxicillin?",
+    "relevant": [{ "drug_name": "Amoxicillin", "category": "interactions" }]
+  },
+  {
+    "query": "Does sertraline interact with other drugs?",
+    "relevant": [{ "drug_name": "Sertraline", "category": "interactions" }]
+  },
+  {
+    "query": "What interactions should be considered when taking losartan?",
+    "relevant": [{ "drug_name": "Losartan", "category": "interactions" }]
+  },
+  {
+    "query": "Are there medication interactions with gabapentin?",
+    "relevant": [{ "drug_name": "Gabapentin", "category": "interactions" }]
+  },
+  {
+    "query": "What is the mechanism of action of atorvastatin?",
+    "relevant": [{ "drug_name": "Atorvastatin", "category": "mechanism" }]
+  },
+  {
+    "query": "How does amoxicillin work in the body?",
+    "relevant": [{ "drug_name": "Amoxicillin", "category": "mechanism" }]
+  },
+  {
+    "query": "What is the mechanism of action of ibuprofen?",
+    "relevant": [{ "drug_name": "Ibuprofen", "category": "mechanism" }]
+  },
+  {
+    "query": "How does albuterol affect the respiratory system?",
+    "relevant": [{ "drug_name": "Albuterol", "category": "mechanism" }]
+  },
+  {
+    "query": "What is the pharmacological mechanism of metformin?",
+    "relevant": [{ "drug_name": "Metformin", "category": "mechanism" }]
+  },
+  {
+    "query": "What conditions is atorvastatin indicated for?",
+    "relevant": [{ "drug_name": "Atorvastatin", "category": "indications" }]
+  },
+  {
+    "query": "What is amoxicillin used to treat?",
+    "relevant": [{ "drug_name": "Amoxicillin", "category": "indications" }]
+  },
+  {
+    "query": "What are the indications for albuterol?",
+    "relevant": [{ "drug_name": "Albuterol", "category": "indications" }]
+  },
+  {
+    "query": "What conditions is sertraline prescribed for?",
+    "relevant": [{ "drug_name": "Sertraline", "category": "indications" }]
+  },
+  {
+    "query": "Who should not take aspirin?",
+    "relevant": [{ "drug_name": "Aspirin", "category": "contraindications" }]
+  },
+  {
+    "query": "What are the contraindications of lisinopril?",
+    "relevant": [{ "drug_name": "Lisinopril", "category": "contraindications" }]
+  }
+]

@@ -1,21 +1,3 @@
-"""
-Streamlit Drug Information Chatbot
-Beautiful, interactive web interface for your chatbot
-
-Installation:
-pip install streamlit streamlit-chat
-
-Run:
-streamlit run streamlit_app.py
-
-Features:
-- Chat interface with history
-- RAG toggle
-- Source citations
-- Example questions
-- Model info display
-"""
-
 import streamlit as st
 import torch
 from pathlib import Path
@@ -38,7 +20,6 @@ except Exception as e:
 
 MODEL_DIR = ROOT / "models" / "drug_qna_lora" / "final"
 FAISS_DIR = ROOT / "data" / "faiss"
-
 
 # Page config
 st.set_page_config(
@@ -165,8 +146,25 @@ def generate_answer(question, model, tokenizer, retriever=None, use_rag=True):
     
     # Prepare prompt
     if context:
-        prompt = f"Context: {context}\n\nQuestion: {question}"
+        # prompt = f"Context: {context}\n\nQuestion: {question}"
+        prompt = (
+            "Your are a medical assistant\n\n"
+            "Use ONLY the information provided in the context below.\n"
+            "Do NOT use prior knowledge.\n"
+            "If the answer is not present in the context, say:\n"
+            "\"I do not have enough information from the provided context.\"\n\n"
+            f"Context:\n{context}\n\n"
+            f"Question:\n{question}\n\n"
+            "Answer:"
+        )
+
+        # check length of prompt 
+        prompt_tokens = tokenizer.tokenize(prompt)
+        if len(prompt_tokens) > 512:
+            st.warning(f"Warning: Prompt exceeds 512 tokens and will be truncated.  total tokens: {len(prompt_tokens)}")
+
     else:
+        # No context retrived 
         prompt = question
     
     # Generate
@@ -177,7 +175,7 @@ def generate_answer(question, model, tokenizer, retriever=None, use_rag=True):
         with torch.no_grad():
             outputs = model.generate(
               **inputs, 
-              max_length=256,
+              max_length=512,
               num_beams=4,
               repetition_penalty=1.2,
               no_repeat_ngram_size=3,
@@ -233,25 +231,24 @@ with st.sidebar:
                           disabled=not st.session_state.retriever,
                           help="Use retrieval-augmented generation for accurate facts")
     
-    temperature = st.slider("Response Creativity", 0.1, 1.0, 0.7, 0.1,
-                           help="Higher = more creative, Lower = more focused")
-    
     st.markdown("---")
     
     # Example questions
     st.subheader("💡 Try asking:")
     example_questions = [
-        "What is the dosage of Ibuprofen?",
-        "What are the side effects of Paracetamol?",
+        "What is the dosage of Amoxicillin?",
+        "what is the warnings and precautions of Atorvastatin?",
+        "How does Albuterol work?",
+        "What are the side effects of Ibuprofen?",
         "When should I not take Amoxicillin?",
-        "How does Vitamin D work?",
         "Can I take Aspirin with Ibuprofen?"
     ]
     
     for i, question in enumerate(example_questions):
         if st.button(question, key=f"example_{i}"):
-            st.session_state.messages.append({"role": "user", "content": question})
+            st.session_state.pending_question = question
             st.rerun()
+
     
     st.markdown("---")
     
@@ -343,6 +340,33 @@ if prompt := st.chat_input("Ask about drug information...", key="chat_input"):
     
     # Rerun to display new messages
     st.rerun()
+
+# Input from sidebar example buttons
+if "pending_question" in st.session_state:
+    question = st.session_state.pop("pending_question")
+
+    st.session_state.messages.append({
+        "role": "user",
+        "content": question
+    })
+
+    with st.spinner("🤔 Thinking..."):
+        answer, sources = generate_answer(
+            question,
+            st.session_state.model,
+            st.session_state.tokenizer,
+            st.session_state.retriever,
+            use_rag
+        )
+
+    st.session_state.messages.append({
+        "role": "assistant",
+        "content": answer,
+        "sources": sources
+    })
+
+    st.rerun()
+
 
 # ============================================================================
 # FOOTER
