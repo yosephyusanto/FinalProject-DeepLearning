@@ -316,7 +316,7 @@ for message in st.session_state.messages:
                     st.markdown(f"""
                     **Source {i+1}:** {source['drug_name']} - {source['category']}  
                     *Distance: {source['distance']:.4f}*  
-                    {source['text'][:200]}...
+                    {source['text']}...
                     """)
 
 # Chat input
@@ -368,7 +368,7 @@ with col2:
     st.markdown("""
     <div class="metric-card">
         <h4>🎓 Project Info</h4>
-        <p><strong>Course:</strong> NLP/ML Project</p>
+        <p><strong>Course:</strong> Deep Learning Project</p>
         <p><strong>Tech:</strong> Flan-T5 + LoRA + RAG</p>
     </div>
     """, unsafe_allow_html=True)
