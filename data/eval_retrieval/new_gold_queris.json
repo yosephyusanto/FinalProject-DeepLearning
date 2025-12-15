@@ -1,0 +1,249 @@
+[
+  {
+    "query_id": "Q01",
+    "query": "What warnings and precautions should be considered before taking Atorvastatin?",
+    "expected_drug": "Atorvastatin",
+    "expected_category": ["warnings"]
+  },
+  {
+    "query_id": "Q02",
+    "query": "Are there serious safety warnings associated with Albuterol?",
+    "expected_drug": "Albuterol",
+    "expected_category": ["warnings"]
+  },
+  {
+    "query_id": "Q03",
+    "query": "What precautions are listed for Omeprazole use?",
+    "expected_drug": "Omeprazole",
+    "expected_category": ["warnings"]
+  },
+  {
+    "query_id": "Q04",
+    "query": "What warnings apply when using Ibuprofen?",
+    "expected_drug": "Ibuprofen",
+    "expected_category": ["warnings"]
+  },
+  {
+    "query_id": "Q05",
+    "query": "Are there any boxed or important warnings for Atorvastatin?",
+    "expected_drug": "Atorvastatin",
+    "expected_category": ["warnings"]
+  },
+  {
+    "query_id": "Q06",
+    "query": "What safety concerns are associated with Albuterol treatment?",
+    "expected_drug": "Albuterol",
+    "expected_category": ["warnings"]
+  },
+  {
+    "query_id": "Q07",
+    "query": "What precautions should patients know before taking Omeprazole?",
+    "expected_drug": "Omeprazole",
+    "expected_category": ["warnings"]
+  },
+  {
+    "query_id": "Q08",
+    "query": "Are there warnings related to long-term use of Atorvastatin?",
+    "expected_drug": "Atorvastatin",
+    "expected_category": ["warnings"]
+  },
+  {
+    "query_id": "Q09",
+    "query": "What warnings should be reviewed before prescribing Albuterol?",
+    "expected_drug": "Albuterol",
+    "expected_category": ["warnings"]
+  },
+  {
+    "query_id": "Q10",
+    "query": "What precautions are associated with Ibuprofen therapy?",
+    "expected_drug": "Ibuprofen",
+    "expected_category": ["warnings"]
+  },
+
+  {
+    "query_id": "Q11",
+    "query": "Does Atorvastatin interact with other medications?",
+    "expected_drug": "Atorvastatin",
+    "expected_category": ["interactions"]
+  },
+  {
+    "query_id": "Q12",
+    "query": "What drug interactions are associated with Albuterol?",
+    "expected_drug": "Albuterol",
+    "expected_category": ["interactions"]
+  },
+  {
+    "query_id": "Q13",
+    "query": "Are there known drug interactions with Omeprazole?",
+    "expected_drug": "Omeprazole",
+    "expected_category": ["interactions"]
+  },
+  {
+    "query_id": "Q14",
+    "query": "Which medications should not be taken together with Ibuprofen?",
+    "expected_drug": "Ibuprofen",
+    "expected_category": ["interactions"]
+  },
+  {
+    "query_id": "Q15",
+    "query": "What medications interact with Atorvastatin therapy?",
+    "expected_drug": "Atorvastatin",
+    "expected_category": ["interactions"]
+  },
+  {
+    "query_id": "Q16",
+    "query": "Are there drug interaction concerns for Albuterol users?",
+    "expected_drug": "Albuterol",
+    "expected_category": ["interactions"]
+  },
+  {
+    "query_id": "Q17",
+    "query": "Does Omeprazole have clinically significant interactions?",
+    "expected_drug": "Omeprazole",
+    "expected_category": ["interactions"]
+  },
+  {
+    "query_id": "Q18",
+    "query": "What substances may interact with Ibuprofen?",
+    "expected_drug": "Ibuprofen",
+    "expected_category": ["interactions"]
+  },
+  {
+    "query_id": "Q19",
+    "query": "What are common drug interactions involving Atorvastatin?",
+    "expected_drug": "Atorvastatin",
+    "expected_category": ["interactions"]
+  },
+
+  {
+    "query_id": "Q20",
+    "query": "What happens in case of Atorvastatin overdose?",
+    "expected_drug": "Atorvastatin",
+    "expected_category": ["overdosage"]
+  },
+  {
+    "query_id": "Q21",
+    "query": "What are the symptoms of Albuterol overdose?",
+    "expected_drug": "Albuterol",
+    "expected_category": ["overdosage"]
+  },
+  {
+    "query_id": "Q22",
+    "query": "How is Omeprazole overdose managed?",
+    "expected_drug": "Omeprazole",
+    "expected_category": ["overdosage"]
+  },
+  {
+    "query_id": "Q23",
+    "query": "What should be done in case of Ibuprofen overdose?",
+    "expected_drug": "Ibuprofen",
+    "expected_category": ["overdosage"]
+  },
+  {
+    "query_id": "Q24",
+    "query": "Are there overdose risks associated with Atorvastatin?",
+    "expected_drug": "Atorvastatin",
+    "expected_category": ["overdosage"]
+  },
+
+  {
+    "query_id": "Q25",
+    "query": "What are the common side effects of Albuterol?",
+    "expected_drug": "Albuterol",
+    "expected_category": ["side_effects"]
+  },
+  {
+    "query_id": "Q26",
+    "query": "What adverse reactions are reported for Atorvastatin?",
+    "expected_drug": "Atorvastatin",
+    "expected_category": ["side_effects"]
+  },
+  {
+    "query_id": "Q27",
+    "query": "What side effects may occur with Omeprazole use?",
+    "expected_drug": "Omeprazole",
+    "expected_category": ["side_effects"]
+  },
+  {
+    "query_id": "Q28",
+    "query": "What are common adverse effects of Ibuprofen?",
+    "expected_drug": "Ibuprofen",
+    "expected_category": ["side_effects"]
+  },
+  {
+    "query_id": "Q29",
+    "query": "Are there serious side effects associated with Albuterol?",
+    "expected_drug": "Albuterol",
+    "expected_category": ["side_effects"]
+  },
+
+  {
+    "query_id": "Q30",
+    "query": "What is the recommended dosage for Ibuprofen?",
+    "expected_drug": "Ibuprofen",
+    "expected_category": ["dosage"]
+  },
+  {
+    "query_id": "Q31",
+    "query": "How should Atorvastatin be administered?",
+    "expected_drug": "Atorvastatin",
+    "expected_category": ["dosage"]
+  },
+  {
+    "query_id": "Q32",
+    "query": "What is the proper dosage of Albuterol?",
+    "expected_drug": "Albuterol",
+    "expected_category": ["dosage"]
+  },
+  {
+    "query_id": "Q33",
+    "query": "How is Omeprazole dosage determined?",
+    "expected_drug": "Omeprazole",
+    "expected_category": ["dosage"]
+  },
+
+  {
+    "query_id": "Q34",
+    "query": "How does Atorvastatin work in the body?",
+    "expected_drug": "Atorvastatin",
+    "expected_category": ["mechanism"]
+  },
+  {
+    "query_id": "Q35",
+    "query": "What is the mechanism of action of Albuterol?",
+    "expected_drug": "Albuterol",
+    "expected_category": ["mechanism"]
+  },
+  {
+    "query_id": "Q36",
+    "query": "How does Omeprazole reduce stomach acid?",
+    "expected_drug": "Omeprazole",
+    "expected_category": ["mechanism"]
+  },
+  {
+    "query_id": "Q37",
+    "query": "What is the pharmacological action of Ibuprofen?",
+    "expected_drug": "Ibuprofen",
+    "expected_category": ["mechanism"]
+  },
+
+  {
+    "query_id": "Q38",
+    "query": "What is Omeprazole used for?",
+    "expected_drug": "Omeprazole",
+    "expected_category": ["indications"]
+  },
+  {
+    "query_id": "Q39",
+    "query": "What conditions is Ibuprofen indicated for?",
+    "expected_drug": "Ibuprofen",
+    "expected_category": ["indications"]
+  },
+
+  {
+    "query_id": "Q40",
+    "query": "Who should not take Atorvastatin?",
+    "expected_drug": "Atorvastatin",
+    "expected_category": ["contraindications"]
+  }
+]
