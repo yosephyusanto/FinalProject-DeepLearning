@@ -2,6 +2,7 @@ import streamlit as st
 import torch
 from pathlib import Path
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+from peft import PeftModel
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -36,7 +37,7 @@ st.set_page_config(
 st.markdown("""
 <style>
     .main-header {
-        font-size: 2.5rem;
+        font-size: 4rem;
         font-weight: bold;
         color: #1f77b4;
         text-align: center;
@@ -97,10 +98,16 @@ def load_chatbot_model():
     """
     try:
         tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR)
-        model = AutoModelForSeq2SeqLM.from_pretrained(
-            MODEL_DIR,
+        # load base model
+        base_model = AutoModelForSeq2SeqLM.from_pretrained(
+            "google/flan-t5-base",
             device_map="auto",
             torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32
+        )
+        # attach LoRA adapter
+        model = PeftModel.from_pretrained(
+            base_model,
+            MODEL_DIR,  
         )
         model.eval()
         return model, tokenizer
@@ -206,7 +213,6 @@ if 'retriever' not in st.session_state:
 # ============================================================================
 
 with st.sidebar:
-    st.image("https://img.icons8.com/color/96/000000/pharmacy.png", width=100)
     st.title("💊 Drug Info Chatbot")
     
     st.markdown("---")
