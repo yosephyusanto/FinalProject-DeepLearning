@@ -5,6 +5,7 @@ transformers>=4.35.0
 sentence-transformers>=2.2.0
 numpy>=1.24.0
 faiss-cpu>=1.7.4
+peft>=0.8.0
 
 # Optional: Use faiss-gpu if you have CUDA support
 # faiss-gpu>=1.7.4
